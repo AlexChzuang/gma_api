@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-image: url(gma3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 5px;
+  color: aliceblue;
+}
+
+nav {
+  background-color: lightslategray;
+  animation: nav-load 500ms ease-in;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+ul li {
+  padding: 20px;
+  border-radius: 15px;
+  color: aliceblue;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Monoton", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.container {
+  margin: 20px;
+}
+
+.infoMovie {
+  padding: 30px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  margin: 10px;
+  background-color: gray;
+  transition: 0.3s;
+}
+
+.infoMovie:hover {
+  transform: scale(1.1);
+}
+
+.record-list {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
